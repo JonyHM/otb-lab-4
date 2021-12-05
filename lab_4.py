@@ -67,7 +67,7 @@ data = [
   ['Softcoded', softDiff.total_seconds()]
 ]
   
-df = pd.DataFrame(data, columns=['Modo de acesso','Tempo de execução'])
+df = pd.DataFrame(data, columns=['Modo de acesso','Tempo de execução (ms)'])
 print (df)
 
 df.plot(x ='Modo de acesso', y='Tempo de execução (ms)', kind = 'bar')
